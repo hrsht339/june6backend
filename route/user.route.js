@@ -113,7 +113,7 @@ userRouter.post("/api/users/:id/friends",authentication,async(req,res)=>{
     }
 })
 
-userRouter.post("/api/users/:id/friends/:friendId",authentication,async(req,res)=>{
+userRouter.put("/api/users/:id/friends/:friendId",authentication,async(req,res)=>{
     const {id}=req.params
     const {friendId}=req.params
     const body = req.body
